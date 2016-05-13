@@ -1,0 +1,41 @@
+[alias]
+  a = add
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  pl = pull
+  ps = push
+  lc = rev-parse HEAD
+  lt = describe --tags
+  hist-all = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
+  hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
+  fo = fetch origin
+  cp = cherry-pick
+[user]
+    email = daithi.walker@gmail.com
+    name = daithi.walker
+[github]
+    user = daithi.walker
+    # token=xxxx
+[color]
+    status = auto
+    branch = auto
+[color "branch"]
+    current = green bold
+    local = green
+    remote = red Bold
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red
+[core]
+    editor = /usr/bin/vim
+    excludesfile = /home/dave/.gitignore
+[merge]
+    tool = meld
+[diff]
+    external = /home/dave/gitconfig/git-diff-cmd.sh
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
