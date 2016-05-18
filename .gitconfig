@@ -181,7 +181,7 @@
 [merge]
     tool = meld
 [diff]
-    external = /home/dave/gitconfig/git-diff-cmd.sh
+    external = ~/gitconfig/git-diff-cmd.sh
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f
